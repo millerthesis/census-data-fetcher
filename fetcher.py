@@ -40,6 +40,11 @@ def fetch_and_save_all():
         
 
 
+if __name__ == '__main__':
+    print('Hello, refreshing data now!')
+    fetch_and_save_all()
+
+
 
 
 
