@@ -1,5 +1,5 @@
 readable_name,Name,type,dataset,subset,code,api_value
-Total population,Percent; SEX AND AGE - Total population,,ACS_16_5YR,DP05,HC03_VC03,B00001_001E
+Total population,Percent; SEX AND AGE - Total population,,ACS_16_5YR,DP05,HC03_VC03,B01003_001E
 Median age,Estimate; SEX AND AGE - Median age (years),,ACS_16_5YR,DP05,HC01_VC23,B01002_001E
 White,Percent; RACE - One race - White,,ACS_16_5YR,DP05,HC03_VC49,B02001_002E
 Total Housing Units,OWNER HOMES TKTK,,,,,B25075_001E
