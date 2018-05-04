@@ -16,13 +16,13 @@ def get_census_meta():
     rawdata = csv.DictReader(txt.splitlines())
     data = []
     for row in rawdata:
-        if row['readable_name']:
+        if row['for_app'] == 'TRUE':
             d = {}
             d['readable_name'] = row['readable_name']
             d['api_value'] = row['api_value']
             data.append(d)
     return data
-    
+
 
 def get_census_fields():
     fields = [c['api_value'] for c in get_census_meta()]
