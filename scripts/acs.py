@@ -1,11 +1,16 @@
 from pathlib import Path
+from scripts.meta import get_census_api_key, get_acs_tablenames
+from scripts.meta import get_geo_params
+
 import requests
 import csv
+from urllib.parse import urlencode
 
 # https://api.census.gov/data/2016/acs/acs5?get=NAME,GEO_ID,B01001_001E,B01001_001M&for=state:06
 
 BASE_ENDPOINT = 'https://api.census.gov/data/{year}/acs/acs5'
 # ?get=NAME,GEO_ID,B01001_001E,B01001_001M&for=state:06'
+
 
 
 def build_request_params(tablenames, geo, state_fips=None):
@@ -29,25 +34,22 @@ def build_request_params(tablenames, geo, state_fips=None):
     else:
         tpairs = [x for tup in [(f+'E', f+'M') for f in tablenames] for x in tup] # gets E and M of each tablename
         params['get'] = ','.join(['NAME', 'GEO_ID'] + tpairs)
-    if geo is 'us':
-        params['for'] = 'us:*'
-    elif geo is 'state':
-        params['for'] = 'state:*'
-    elif geo is 'county':
-        params['for'] = 'county:*'
-    elif geo is 'tract' and state_fips is not None:
-        params['for'] = 'tract:*'
-        params['in'] = 'state:{}'.format(state_fips)
-    else:
-        raise ValueError('geo must be us, state, county, tract + state_fips')
+
+    params.update(get_geo_params(geo, state_fips=state_fips))
     return params
 
 
+def url_for_api_call(year, tablenames, geo, state_fips=None, api_key=None):
+    base_url = BASE_ENDPOINT.format(year=year)
+    _params = build_request_params(tablenames, geo, state_fips)
+    if api_key:
+        _params['key'] = api_key
+    query_string = urlencode(_params, safe=':*,')
+    url = base_url + '?' + query_string
+    return url
 
-def call_api(year, tablenames, geo, state_fips=None):
-    myparams = build_request_params(tablenames, geo, state_fips)
-    baseurl = BASE_ENDPOINT.format(year=year)
-    resp = requests.get(baseurl, params=myparams)
-    return resp
 
-
+"""
+from scripts.acs import url_for_api_call
+url_for_api_call('2016', ['B01001_001'], 'state')
+"""
