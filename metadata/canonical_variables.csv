@@ -1,81 +1,82 @@
-name,slug,official_name,for_app,variable,dataset,census_type,census_year,census_subtype,historical comparison,type,subset,code,notes
-Total population,total_population,TOTAL POPULATION,TRUE,B01003_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P001001,,DP05,HC03_VC03,
-Median age,median_age,Estimate; SEX AND AGE - Median age (years),TRUE,B01002_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P013001,,DP05,HC01_VC23,
-White,white,Estimate: TOTAL: WHITE ALONE,TRUE,B02001_002,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P003003,,DP05,HC03_VC49,
-Black,black,Estimate: TOTAL: BLACK OR AFRICAN-AMERICAN ALONE,TRUE,B02001_003,ACS_16_5YR,ACS,"2011,2016",5YR,P003004,,,,
-American Indian,american_indian,Estimate: TOTAL: AMERICAN INDIAN ALONE,TRUE,B02001_004,ACS_16_5YR,ACS,"2011,2016",5YR,P003005,,,,
-Asian,asian,Estimate: TOTAL: ASIAN ALONE,TRUE,B02001_005,ACS_16_5YR,ACS,"2011,2016",5YR,P003006,,,,
-Hawaiian/Pacific Islander,islander,Estimate: TOTAL: Native Hawaiian and other Pacific Islander,TRUE,B02001_006,ACS_16_5YR,ACS,"2011,2016",5YR,P003007,,,,
-Some other race alone,other_race,Estimate: TOTAL: Some other race alone,TRUE,B02001_007,ACS_16_5YR,ACS,"2011,2016",5YR,P003008,,,,
-Total housing units,total_housing_units,Total Housing Units Estimate,TRUE,B25001_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 H001001,,,,
-Total occupied homes,total_households,Estimate!!Total,TRUE,B25003_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 H007001,,,,
-Total owner-occupied homes,owner_occupied,Population in owner-occupied homes,TRUE,B25003_002,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 H007002,,,,
-Total renter-occupied homes,renter_occupied,Population in renter-occupied homes,TRUE,B25003_003,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 H007003,,,,
-Total renters,total_renters,Estimate!!Total population in occupied housing units!!Renter occupied,TRUE,B25026_009E,ACS_16_5YR,ACS,"2011,2016",5YR,ACS ,,,,
-Moved in more than 35 years ago (renters),moved_in_more_than_35_years_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1979 or earlier,TRUE,B25026_015E,ACS_16_5YR,ACS,"2011,2016",5YR,ACS B25109_007E,,DP04,HC03_VC80,
-Moved in 26 to 35 years ago (renters),moved_in_26_to_35_years_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1980 to 1989,TRUE,B25026_014E,ACS_16_5YR,ACS,"2011,2016",5YR,ACS B25109_006E,,DP04,HC03_VC79,
-Moved in 16 to 25 years ago (renters),moved_in_16_to_25_years_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1990 to 1999,TRUE,B25026_013E,ACS_16_5YR,ACS,"2011,2016",5YR,ACS B25109_005E,,DP04,HC03_VC78,
-Moved in 6 to 15 years ago (renters),moved_in_6_to_15_years_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 2000 to 2009,TRUE,B25026_012E,ACS_16_5YR,ACS,"2011,2016",5YR,"ACS B25109_004E, ACS B25109_003E",,DP04,HC03_VC77,
-Moved in 1 to 5 years ago (renters),moved_in_1_to_5_years_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 2010 to 2014,TRUE,B25026_011E,ACS_16_5YR,ACS,"2011,2016",5YR,,,DP04,HC03_VC76,
-Moved in less than a year ago (renters),moved_in_less_than_year_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 2015 or later,TRUE,B25026_010E,ACS_16_5YR,ACS,"2011,2016",5YR,,,DP04,HC03_VC75,
-Median home value,median_home_value,Estimate; VALUE - Owner-occupied units - Median (dollars),TRUE,B25077_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 H076001,,DP04,HC01_VC128,
-Homes worth $1 - $1.5 million,homes_between_1m_15m,"Estimate!!Total!!$1,000,000 to $1,499,999",TRUE,B25075_025,ACS_16_5YR,ACS,2016,5YR,Census 2000 H074025,,DP04,HC03_VC127,
-Homes worth $1.5 - $1.99 million,homes_between_15m_19m,"Estimate!!Total!!$1,500,000 to $1,999,999",TRUE,B25075_026,ACS_16_5YR,ACS,2016,5YR,Census 2000 H074025,,,,
-Homes worth $2 million or more,homes_over_2m,"Estimate!!Total!!$2,000,000 or more",TRUE,B25075_027,ACS_16_5YR,ACS,2016,5YR,Census 2000 H074025,,,,
-Homes worth $1 million or more,homes_over_1m,"Estimate!!Total!!$1,000,000 or more",TRUE,B25075_025,ACS_16_5YR,ACS,2011,5YR,Census 2000 H074025,,,,
-Total population for poverty status,poverty_population,POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE,TRUE,B17001_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P087001,,,,
-Total with income below poverty level,below_poverty,Estimate: population with income below poverty level in the past 12 months,TRUE,B17001_002,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P087002,,S1701,HC03_EST_VC02,
-Income per capita,income_per_capita,Estimate!!Per capita income in the past 12 months (in 2016 inflation-adjusted dollars),TRUE,B19301_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P082001,,,,
-Household income $200K+,income_over_200k,"Household Income in the Past 12 Months; $200,000 or more",TRUE,B19001_017,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P052017,,DP03,HC03_VC84,
-Median household income,median_household_income,Estimate; INCOME AND BENEFITS (IN 2016 INFLATION-ADJUSTED DOLLARS) - Total households - Median household income (dollars),TRUE,B19013_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P053001,,DP03,HC01_VC85,
-Born in state,born_in_state,Estimate; Native: - Born in state of residence,TRUE,B05002_003,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P021003,,B05002,HD01_VD03,
-Born in other state,born_other_state,Estimate; Native: - Born in other state in the United States:,TRUE,B05002_004,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P021004,,B05002,HD01_VD04,
-Foreign born,foreign_born,Estimate; Foreign born:,TRUE,B05002_009,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P021009,,B05002,HD01_VD13,
-Total population 18-64 years,adults,Total population between 18-64 years of age,TRUE,B16007_008E,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P021010,,,,
-Speak only English (18 to 64 years),english_only,AGE BY LANGUAGE SPOKEN AT HOME FOR THE POPULATION 5 YEARS AND OVER,TRUE,B16007_009,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P019024,,SF1_DP1,HC01_VC01,
-Total population in renter-occupied housing units,population_renter_occupied_housing_units,Estimate!!Total population in occupied housing units!!Renter occupied,TRUE,B25026_009E,ACS_09_5YR,ACS,2009,5YR,ACS ,,,,
-Moved in before 1969 (renters),moved_before_1969,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1969 or earlier,TRUE,B25026_015E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC77,
-Moved in 1970 to 1979 (renters),moved_1970s,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1970 to 1979,TRUE,B25026_014E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC76,
-Moved in 1980 to 1989 (renters),moved_1980s,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1980 to 1989,TRUE,B25026_013E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC75,
-Moved in 1990 to 1999 (renters),moved_1990s,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1990 to 1999,TRUE,B25026_012E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC74,
-Moved in 2000 to 2004 (renters),moved_2000_2004,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 2000 to 2004,TRUE,B25026_011E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC73,
-Moved in 2005 or later (renters),moved_after_2005,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 2005 or later,TRUE,B25026_010E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC72,
+name,slug,official_name,for_app,variable,dataset,census_type,census_year,census_subtype,historical comparison,type,subset,code
+Total population,total_population,TOTAL POPULATION,TRUE,B01003_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P001001,,DP05,HC03_VC03
+Median age,median_age,Estimate; SEX AND AGE - Median age (years),TRUE,B01002_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P013001,,DP05,HC01_VC23
+White,white,Estimate: TOTAL: WHITE ALONE,TRUE,B02001_002,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P003003,,DP05,HC03_VC49
+Black,black,Estimate: TOTAL: BLACK OR AFRICAN-AMERICAN ALONE,TRUE,B02001_003,ACS_16_5YR,ACS,"2011,2016",5YR,P003004,,,
+American Indian,american_indian,Estimate: TOTAL: AMERICAN INDIAN ALONE,TRUE,B02001_004,ACS_16_5YR,ACS,"2011,2016",5YR,P003005,,,
+Asian,asian,Estimate: TOTAL: ASIAN ALONE,TRUE,B02001_005,ACS_16_5YR,ACS,"2011,2016",5YR,P003006,,,
+Hawaiian/Pacific Islander,islander,Estimate: TOTAL: Native Hawaiian and other Pacific Islander,TRUE,B02001_006,ACS_16_5YR,ACS,"2011,2016",5YR,P003007,,,
+Hispanic or Latino,hispanic_latino,HISPANIC OR LATINO ORIGIN,TRUE,B03003_003,ACS_16_5YR,ACS,"2011,2016",5YR,,,,
+Some other race alone,other_race,Estimate: TOTAL: Some other race alone,TRUE,B02001_007,ACS_16_5YR,ACS,"2011,2016",5YR,P003008,,,
+Total housing units,total_housing_units,Total Housing Units Estimate,TRUE,B25001_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 H001001,,,
+Total occupied homes,total_households,Estimate!!Total,TRUE,B25003_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 H007001,,,
+Total owner-occupied homes,owner_occupied,Population in owner-occupied homes,TRUE,B25003_002,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 H007002,,,
+Total renter-occupied homes,renter_occupied,Population in renter-occupied homes,TRUE,B25003_003,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 H007003,,,
+Total renters,total_renters,Estimate!!Total population in occupied housing units!!Renter occupied,TRUE,B25026_009E,ACS_16_5YR,ACS,"2011,2016",5YR,ACS ,,,
+Moved in more than 35 years ago (renters),moved_in_more_than_35_years_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1979 or earlier,TRUE,B25026_015E,ACS_16_5YR,ACS,"2011,2016",5YR,ACS B25109_007E,,DP04,HC03_VC80
+Moved in 26 to 35 years ago (renters),moved_in_26_to_35_years_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1980 to 1989,TRUE,B25026_014E,ACS_16_5YR,ACS,"2011,2016",5YR,ACS B25109_006E,,DP04,HC03_VC79
+Moved in 16 to 25 years ago (renters),moved_in_16_to_25_years_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1990 to 1999,TRUE,B25026_013E,ACS_16_5YR,ACS,"2011,2016",5YR,ACS B25109_005E,,DP04,HC03_VC78
+Moved in 6 to 15 years ago (renters),moved_in_6_to_15_years_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 2000 to 2009,TRUE,B25026_012E,ACS_16_5YR,ACS,"2011,2016",5YR,"ACS B25109_004E, ACS B25109_003E",,DP04,HC03_VC77
+Moved in 1 to 5 years ago (renters),moved_in_1_to_5_years_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 2010 to 2014,TRUE,B25026_011E,ACS_16_5YR,ACS,"2011,2016",5YR,,,DP04,HC03_VC76
+Moved in less than a year ago (renters),moved_in_less_than_year_ago,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 2015 or later,TRUE,B25026_010E,ACS_16_5YR,ACS,"2011,2016",5YR,,,DP04,HC03_VC75
+Median home value,median_home_value,Estimate; VALUE - Owner-occupied units - Median (dollars),TRUE,B25077_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 H076001,,DP04,HC01_VC128
+Homes worth $1 - $1.5 million,homes_between_1m_15m,"Estimate!!Total!!$1,000,000 to $1,499,999",TRUE,B25075_025,ACS_16_5YR,ACS,2016,5YR,Census 2000 H074025,,DP04,HC03_VC127
+Homes worth $1.5 - $1.99 million,homes_between_15m_19m,"Estimate!!Total!!$1,500,000 to $1,999,999",TRUE,B25075_026,ACS_16_5YR,ACS,2016,5YR,Census 2000 H074025,,,
+Homes worth $2 million or more,homes_over_2m,"Estimate!!Total!!$2,000,000 or more",TRUE,B25075_027,ACS_16_5YR,ACS,2016,5YR,Census 2000 H074025,,,
+Homes worth $1 million or more,homes_over_1m,"Estimate!!Total!!$1,000,000 or more",TRUE,B25075_025,ACS_16_5YR,ACS,2011,5YR,Census 2000 H074025,,,
+Total population for poverty status,poverty_population,POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE,TRUE,B17001_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P087001,,,
+Total with income below poverty level,below_poverty,Estimate: population with income below poverty level in the past 12 months,TRUE,B17001_002,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P087002,,S1701,HC03_EST_VC02
+Income per capita,income_per_capita,Estimate!!Per capita income in the past 12 months (in 2016 inflation-adjusted dollars),TRUE,B19301_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P082001,,,
+Household income $200K+,income_over_200k,"Household Income in the Past 12 Months; $200,000 or more",TRUE,B19001_017,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P052017,,DP03,HC03_VC84
+Median household income,median_household_income,Estimate; INCOME AND BENEFITS (IN 2016 INFLATION-ADJUSTED DOLLARS) - Total households - Median household income (dollars),TRUE,B19013_001,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P053001,,DP03,HC01_VC85
+Born in state,born_in_state,Estimate; Native: - Born in state of residence,TRUE,B05002_003,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P021003,,B05002,HD01_VD03
+Born in other state,born_other_state,Estimate; Native: - Born in other state in the United States:,TRUE,B05002_004,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P021004,,B05002,HD01_VD04
+Foreign born,foreign_born,Estimate; Foreign born:,TRUE,B05002_009,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P021009,,B05002,HD01_VD13
+Total population 18-64 years,adults,Total population between 18-64 years of age,TRUE,B16007_008E,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P021010,,,
+Speak only English (18 to 64 years),english_only,AGE BY LANGUAGE SPOKEN AT HOME FOR THE POPULATION 5 YEARS AND OVER,TRUE,B16007_009,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P019024,,SF1_DP1,HC01_VC01
+Total population in renter-occupied housing units,population_renter_occupied_housing_units,Estimate!!Total population in occupied housing units!!Renter occupied,TRUE,B25026_009E,ACS_09_5YR,ACS,2009,5YR,ACS ,,,
+Moved in before 1969 (renters),moved_before_1969,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1969 or earlier,TRUE,B25026_015E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC77
+Moved in 1970 to 1979 (renters),moved_1970s,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1970 to 1979,TRUE,B25026_014E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC76
+Moved in 1980 to 1989 (renters),moved_1980s,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1980 to 1989,TRUE,B25026_013E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC75
+Moved in 1990 to 1999 (renters),moved_1990s,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 1990 to 1999,TRUE,B25026_012E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC74
+Moved in 2000 to 2004 (renters),moved_2000_2004,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 2000 to 2004,TRUE,B25026_011E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC73
+Moved in 2005 or later (renters),moved_after_2005,Estimate!!Total population in occupied housing units!!Renter occupied!!Moved in 2005 or later,TRUE,B25026_010E,ACS_09_5YR,ACS,2009,5YR,COMPARE WITH ACS16,,DP04,HC03_VC72
 "population, 25 to 64 years old",population_25_to_64_years,"EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 25 TO 64 YEARS
-Universe: Population 25 to 64 years ; Total",TRUE,B23006_001,ACS_16_5YR,ACS,"2011,2016",5YR,,,,,
-Have at least a bachelor's degree (25 to 64 years old),have_bachelors,EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 25 TO 64 YEARS; Bachelor's degree or higher,TRUE,B23006_023,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P037015 + Census 2000 P037032,,DP05,B23006_023E,
-Total population_00,total_population,Number; Total population,TRUE,P001001,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B01003,,SF1_DP1,HC01_VC01,
-Median age_00,median_age,Number; Total population - SEX AND AGE - Median age (years),TRUE,P013001,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B01002_001E,,SF1_DP1,HC01_VC18,
-White people_00,white,RACE: White alone,TRUE,P003003,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B25006,,SF1_DP1,HC02_VC29,
-Black/African-American,black,RACE: Black/African American alone,TRUE,P003004,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B02001_003E,,SF3_DP3,,
-American Indian,american_indian,RACE: Alaskan/American Indian alone,TRUE,P003005,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B02001_004E,,SF3_DP4,,
-Asian,asian,RACE: Asian alone,TRUE,P003006,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B02001_005E,,SF3_DP5,,
-Hawaiian Islander,islander,RACE: HI Alone,TRUE,P003007,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B02001_006E,,SF3_DP6,,
-Other race alone,other_race,RACE: Other alone,TRUE,P003008,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B02001_007E,,,,
-Total housing units,housing_units,Total housing units,TRUE,H001001,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B25001_001E,,,,
-Total occupied homes,total_occupied_homes,Estimate!!Total,TRUE,H007001,DEC_00 SF1,DEC,2010,5YR,ACS 5YR B25003_001E,,,,
-Total owner-occupied,owner_occupied_homes,Total: owner occupied,TRUE,H007002,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B25003_002E,,,,
-Total renter-occupied,renter_occupied_homes,Total: renter occupied,TRUE,H007003,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B25003_003E,,,,
-Median value for homes,median_value_for_homes,Median Value owner-occupied units,TRUE,H076001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YR B25077_001E,,DP04,HC01_VC125,
-Estimate total for home value,total_home_value,Estimate!!Total,TRUE,H074001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B25075_001E,,,,
-Homes worth $1 million or more,homes_over_1m,"Percent; VALUE - $1,000,000 or more",TRUE,H074025,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B25075_025E,,DP04,HC03_VC124,
-Total population 25 years and older,total_educational_attainment,Total: Population 25 years and over,TRUE,P037001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YR ,,,,
-Total Male with Bachelor's Degree,male_bachelors,Number of males over 25 with bachelor's degree,TRUE,P037015,DEC_00 SF3,DEC,2000,SF3,ACS B15003_022E,,SF3_QTP20,HC01_VC15,
-Total Male with master's degree,male_masters,Number of males over 25 with master's degree,TRUE,P037016,DEC_00 SF3,DEC,2000,SF3,,,,,
-Total Male with professional school degree,male_professional,Number of males over 25 with professional school degree,TRUE,P037017,DEC_00 SF3,DEC,2000,SF3,''',,,,
-Total Male with Doctorate degree,male_doctorate,Number of males over 25 with doctorate degree,TRUE,P037018,DEC_00 SF3,DEC,2000,SF3,,,,,
-Total Female with Bachelor's Degree,female_bachelors,Number of females over 25 with bachelor's degree,TRUE,P037032,DEC_00 SF3,DEC,2000,SF3,ACS B15003_022E,,,,
-Total: Female: Master's degree,female_masters,Number of females over 25 with master's degree,TRUE,P037033,DEC_00 SF3,DEC,2000,SF3,,,,,
-Total: Female: Professional school degree,female_professional,Number of females over 25 with professional school degree,TRUE,P037034,DEC_00 SF3,DEC,2000,SF3,,,,,
-Total: Female: Doctorate degree,female_doctorate,Number of females over 25 with doctorate degree,TRUE,P037035,DEC_00 SF3,DEC,2000,SF3,,,,,
-Total for poverty status determined,poverty_population,Percent below poverty level; All individuals for whom poverty status is determined,TRUE,P087001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YR B17020*,,SF3_QTP34,HC04_VC01,
-Total with income below poverty level,below_poverty,Income in 1999 below poverty level,TRUE,P087002,DEC_00 SF3,DEC,2000,SF3,ACS 5YR B17001_002E,,,,
-Income per capita,income_per_capita,Income per capita in 1999,TRUE,P082001,DEC_00 SF3,DEC,2000,SF3,ACS 5YR B19301_001E,,,,
-Total population for household income,total_income_population,Total population estimate for household incomes,TRUE,P052001,DEC_00 SF3,DEC,2000,SF3,ACS 5YR B19001_001E,,,,
-Household income $200K+,income_over_200k,"Percent; INCOME IN 1999 - Households - $200,000 or more",TRUE,P052017,DEC_00 SF3,DEC,2000,SF3,ACS 5-YR B19001_017E,,SF3_DP3,HC02_VC63,
-Median household income_00,median_household_income,Number; INCOME IN 1999 - Households - Median household income (dollars),TRUE,P053001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B19013_001E,,SF3_DP3,HC01_VC64,
-Total for birthplace,total_birthplace,PLACE OF BIRTH BY NATIVITY AND CITIZENSHIP STATUS,TRUE,P021001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B05002_001E,,,,
-Born in state_00,born_in_state,Percent; NATIVITY AND PLACE OF BIRTH - Total population - Native - Born in United States - State of residence,TRUE,P021003,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B05002_003E,,SF3_DP2,HC02_VC57,
-Born in different state_00,born_other_state,Percent; NATIVITY AND PLACE OF BIRTH - Total population - Native - Born in United States - Different state,TRUE,P021004,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B05002_004E,,SF3_DP2,HC02_VC58,
-Foreign born_00,foreign_born,Percent; NATIVITY AND PLACE OF BIRTH - Total population - Native - Born outside United States,TRUE,P021009,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B05002_009E,,SF3_DP2,HC02_VC59,
-Total population 18-64 years,adult_population,Total people aged 18-64 years,TRUE,P019024,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B16007_008E,,,,
-Speak only English (18 to 64 years),english_only,Age by Language Spoken At Home by Ability to Speak English for the Population 5 Years and Over [67],TRUE,P019025,DEC_00 SF3,DEC,2000,SF3,ACS 5YR B16007_009E,,,,
+Universe: Population 25 to 64 years ; Total",TRUE,B23006_001,ACS_16_5YR,ACS,"2011,2016",5YR,,,,
+Have at least a bachelor's degree (25 to 64 years old),have_bachelors,EDUCATIONAL ATTAINMENT BY EMPLOYMENT STATUS FOR THE POPULATION 25 TO 64 YEARS; Bachelor's degree or higher,TRUE,B23006_023,ACS_16_5YR,ACS,"2011,2016",5YR,Census 2000 P037015 + Census 2000 P037032,,DP05,B23006_023E
+Total population_00,total_population,Number; Total population,TRUE,P001001,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B01003,,SF1_DP1,HC01_VC01
+Median age_00,median_age,Number; Total population - SEX AND AGE - Median age (years),TRUE,P013001,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B01002_001E,,SF1_DP1,HC01_VC18
+White people_00,white,RACE: White alone,TRUE,P003003,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B25006,,SF1_DP1,HC02_VC29
+Black/African-American,black,RACE: Black/African American alone,TRUE,P003004,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B02001_003E,,SF3_DP3,
+American Indian,american_indian,RACE: Alaskan/American Indian alone,TRUE,P003005,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B02001_004E,,SF3_DP4,
+Asian,asian,RACE: Asian alone,TRUE,P003006,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B02001_005E,,SF3_DP5,
+Hawaiian Islander,islander,RACE: HI Alone,TRUE,P003007,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B02001_006E,,SF3_DP6,
+Other race alone,other_race,RACE: Other alone,TRUE,P003008,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B02001_007E,,,
+Total housing units,housing_units,Total housing units,TRUE,H001001,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B25001_001E,,,
+Total occupied homes,total_occupied_homes,Estimate!!Total,TRUE,H007001,DEC_00 SF1,DEC,2010,5YR,ACS 5YR B25003_001E,,,
+Total owner-occupied,owner_occupied_homes,Total: owner occupied,TRUE,H007002,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B25003_002E,,,
+Total renter-occupied,renter_occupied_homes,Total: renter occupied,TRUE,H007003,DEC_00 SF1,DEC,2010,SF1,ACS 5YR B25003_003E,,,
+Median value for homes,median_value_for_homes,Median Value owner-occupied units,TRUE,H076001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YR B25077_001E,,DP04,HC01_VC125
+Estimate total for home value,total_home_value,Estimate!!Total,TRUE,H074001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B25075_001E,,,
+Homes worth $1 million or more,homes_over_1m,"Percent; VALUE - $1,000,000 or more",TRUE,H074025,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B25075_025E,,DP04,HC03_VC124
+Total population 25 years and older,total_educational_attainment,Total: Population 25 years and over,TRUE,P037001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YR ,,,
+Total Male with Bachelor's Degree,male_bachelors,Number of males over 25 with bachelor's degree,TRUE,P037015,DEC_00 SF3,DEC,2000,SF3,ACS B15003_022E,,SF3_QTP20,HC01_VC15
+Total Male with master's degree,male_masters,Number of males over 25 with master's degree,TRUE,P037016,DEC_00 SF3,DEC,2000,SF3,,,,
+Total Male with professional school degree,male_professional,Number of males over 25 with professional school degree,TRUE,P037017,DEC_00 SF3,DEC,2000,SF3,''',,,
+Total Male with Doctorate degree,male_doctorate,Number of males over 25 with doctorate degree,TRUE,P037018,DEC_00 SF3,DEC,2000,SF3,,,,
+Total Female with Bachelor's Degree,female_bachelors,Number of females over 25 with bachelor's degree,TRUE,P037032,DEC_00 SF3,DEC,2000,SF3,ACS B15003_022E,,,
+Total: Female: Master's degree,female_masters,Number of females over 25 with master's degree,TRUE,P037033,DEC_00 SF3,DEC,2000,SF3,,,,
+Total: Female: Professional school degree,female_professional,Number of females over 25 with professional school degree,TRUE,P037034,DEC_00 SF3,DEC,2000,SF3,,,,
+Total: Female: Doctorate degree,female_doctorate,Number of females over 25 with doctorate degree,TRUE,P037035,DEC_00 SF3,DEC,2000,SF3,,,,
+Total for poverty status determined,poverty_population,Percent below poverty level; All individuals for whom poverty status is determined,TRUE,P087001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YR B17020*,,SF3_QTP34,HC04_VC01
+Total with income below poverty level,below_poverty,Income in 1999 below poverty level,TRUE,P087002,DEC_00 SF3,DEC,2000,SF3,ACS 5YR B17001_002E,,,
+Income per capita,income_per_capita,Income per capita in 1999,TRUE,P082001,DEC_00 SF3,DEC,2000,SF3,ACS 5YR B19301_001E,,,
+Total population for household income,total_income_population,Total population estimate for household incomes,TRUE,P052001,DEC_00 SF3,DEC,2000,SF3,ACS 5YR B19001_001E,,,
+Household income $200K+,income_over_200k,"Percent; INCOME IN 1999 - Households - $200,000 or more",TRUE,P052017,DEC_00 SF3,DEC,2000,SF3,ACS 5-YR B19001_017E,,SF3_DP3,HC02_VC63
+Median household income_00,median_household_income,Number; INCOME IN 1999 - Households - Median household income (dollars),TRUE,P053001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B19013_001E,,SF3_DP3,HC01_VC64
+Total for birthplace,total_birthplace,PLACE OF BIRTH BY NATIVITY AND CITIZENSHIP STATUS,TRUE,P021001,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B05002_001E,,,
+Born in state_00,born_in_state,Percent; NATIVITY AND PLACE OF BIRTH - Total population - Native - Born in United States - State of residence,TRUE,P021003,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B05002_003E,,SF3_DP2,HC02_VC57
+Born in different state_00,born_other_state,Percent; NATIVITY AND PLACE OF BIRTH - Total population - Native - Born in United States - Different state,TRUE,P021004,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B05002_004E,,SF3_DP2,HC02_VC58
+Foreign born_00,foreign_born,Percent; NATIVITY AND PLACE OF BIRTH - Total population - Native - Born outside United States,TRUE,P021009,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B05002_009E,,SF3_DP2,HC02_VC59
+Total population 18-64 years,adult_population,Total people aged 18-64 years,TRUE,P019024,DEC_00 SF3,DEC,2000,SF3,ACS 5-YEAR B16007_008E,,,
+Speak only English (18 to 64 years),english_only,Age by Language Spoken At Home by Ability to Speak English for the Population 5 Years and Over [67],TRUE,P019025,DEC_00 SF3,DEC,2000,SF3,ACS 5YR B16007_009E,,,

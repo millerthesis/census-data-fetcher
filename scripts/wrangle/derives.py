@@ -4,6 +4,9 @@ from meta.vars import NAME_FIELDS
 DERIVATIVES = {
     'nonwhite_pct': lambda x: (x['total_population'] - x['white']) / x['total_population'] * 100,
     'white_pct': lambda x:  x['white'] / x['total_population'] * 100,
+    'black_pct': lambda x:  x['black'] / x['total_population'] * 100,
+    'asian_pct': lambda x:  x['asian'] / x['total_population'] * 100,
+    'hispanic_latino_pct': lambda x:  x['hispanic_latino'] / x['total_population'] * 100,
     'renter_occupied_pct': lambda x: x['renter_occupied'] / x['total_households'] * 100,
     'owner_occupied_pct': lambda x: x['owner_occupied'] / x['total_households'] * 100,
     'homes_over_1m': lambda x: (x['homes_between_15m_19m'] + x['homes_between_1m_15m'] + x['homes_over_2m']),

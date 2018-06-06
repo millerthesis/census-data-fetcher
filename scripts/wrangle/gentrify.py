@@ -6,6 +6,8 @@ GENTRIFY_VARS = {
     'white_pct':  lambda x: 0.1 * (x['2016']['white_pct'] - 0.62)
 }
 
+
+
 def calculate_gentrification(record):
     g = {}
     total = 0

@@ -9,11 +9,11 @@ import json
 DATA_PATH = Path('data')
 
 
-def fetch_acs(years=[2011,2016], key=read_default_api_key()):
+def fetch_acs(years=[2011], key=read_default_api_key()):
     for year in years:
         print(year)
         destdir = DATA_PATH.joinpath('acs', str(year))
-        for geo, _urls in acs_batch(year).items():
+        for geo, _urls in acs_batch(year, key).items():
             if geo == 'tract':
                 destdir = destdir.joinpath('tract')
             destdir.mkdir(exist_ok=True, parents=True)
