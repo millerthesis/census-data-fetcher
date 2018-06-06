@@ -156,7 +156,7 @@ if __name__ == '__main__':
     jpath = DESTDIR.joinpath('records.json')
     print("Saving JSON to", jpath)
     with open(jpath, 'w') as f:
-        f.write(json.dumps(data, indent=2))
+        f.write(json.dumps(data))
 
     # write CSV
     destpath = DESTDIR.joinpath('records.csv')
