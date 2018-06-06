@@ -1,6 +1,7 @@
 from pathlib import Path, PosixPath
 import csv
 SRC_PATH = Path('metadata', 'canonical_variables.csv')
+NAME_FIELDS = [ 'name', 'geo', 'id', 'geo_id',]
 
 
 def get_variables(census_type=None, year=None):

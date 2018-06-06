@@ -9,7 +9,7 @@ import json
 DATA_PATH = Path('data')
 
 
-def fetch_acs(years=[2016], key=read_default_api_key()):
+def fetch_acs(years=[2011,2016], key=read_default_api_key()):
     for year in years:
         print(year)
         destdir = DATA_PATH.joinpath('acs', str(year))

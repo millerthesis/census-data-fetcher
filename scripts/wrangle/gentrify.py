@@ -10,7 +10,7 @@ def calculate_gentrification(record):
     g = {}
     total = 0
     for k, foo in GENTRIFY_VARS.items():
-        g[k] = foo(record)
+        g[k] = round(foo(record), 3)
         total += g[k]
     g['index'] = total
     return g
