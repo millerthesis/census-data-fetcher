@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 config/key.txt
+records.csv
 
 # C extensions
 *.so
