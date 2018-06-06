@@ -24,22 +24,22 @@ def get_variables(census_type=None, year=None):
     result_records = []
     for row in records:
         if row['for_app'] == 'TRUE':
-            if not facet:
+#            if not facet:
                 d = {}
                 d['name'] = row['name']
                 d['slug'] = row['slug']
-                d['variable'] = row['variable']
+                d['variable'] = row['variable'].rstrip('E')
                 d['census_type'] = row['census_type']
                 d['census_year'] = year
                 d['census_subtype'] = row['census_subtype']
-            else:
-                d = row[facet]
-            result_records.append(d)
+#            else:
+#                d = row[facet]
+                result_records.append(d)
     return result_records
 
 
 def get_acs_variables(year):
-    return get_variables(census_type='ACS', year='year')
+    return get_variables(census_type='ACS', year=year)
 
 def get_acs_variable_names(year):
     return [v['variable'] for v in get_acs_variables(year)]
@@ -51,13 +51,13 @@ def get_acs_variable_names(year):
 # def get_decs_variables()
 
 
-def get_acs_variable_keys():
+def get_acs_variable_keys(year):
     """
     returns {
         'B00_001': {slug, census_type, census_subtype, etc}
     }
     """
-    return {r['variable']: r for r in get_acs_variables() }
+    return {r['variable']: r for r in get_acs_variables(year) }
 
 
 if __name__ == '__main__':

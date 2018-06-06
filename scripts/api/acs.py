@@ -35,9 +35,9 @@ def batch_urls(year, variables, geo, state_fips=None, api_key=None):
 
 
 def batch(year, api_key=None):
-    variables = get_acs_variable_names()
+    variables = get_acs_variable_names(year)
     urls = {}
-    for g in ['county', 'state', 'us', 'tract']:
+    for g in ['us', 'state', 'county', 'tract']:
         urls[g] = batch_urls(year, variables, g, api_key=api_key)
     return urls
 
@@ -66,9 +66,9 @@ def __filter_api_variables(variables):
 
 if __name__ == '__main__':
     from meta.config import read_default_api_key
-    year = 2019
+    year = 2016
     key = read_default_api_key()
-    variables = get_acs_variable_names()
+    variables = get_acs_variable_names(year)
 
     print("tract urls:")
     urls = batch_urls(year, variables, 'tract', api_key=key)
