@@ -32,9 +32,9 @@ def calculate_derivatives(year_record):
             except ZeroDivisionError as err:
                 rec[key] = None
             except TypeError as err:
-                print('key:', key)
-                print('foo:', foo)
-                print('err:', err)
+                # print('key:', key)
+                # print('foo:', foo)
+                # print('err:', err)
                 raise err
 
             else:
@@ -59,8 +59,8 @@ def calculate_deltas(record, a_year, b_year):
             except ZeroDivisionError as err:
                 deltas[key] = None
             except TypeError as err:
-                print('key:', key)
-                print('aval:', aval)
-                print('bval:', bval)
+                # print('key:', key)
+                # print('aval:', aval)
+                # print('bval:', bval)
                 deltas[key] = None
     return deltas

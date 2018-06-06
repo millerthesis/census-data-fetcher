@@ -26,13 +26,18 @@ GEO_NAMES = ['us', 'state', 'county', 'tract']
 def read_acs_file(year=2016, geo='us', state_fips=None):
     dpath = DATA_PATH.joinpath('acs', str(year))
     if geo == 'tract':
-        dpath = dpath.joinpath(geo, '{}.csv'.format(state_fips))
+        records = []
+        for fip in get_state_fips():
+            _path = dpath.joinpath(geo, '{}.csv'.format(fip))
+            data = list(csv.DictReader(_path.read_text().splitlines()))
+            records.extend(data)
+
     else:
-        dpath = dpath.joinpath('{}.csv'.format(geo))
-    records = list(csv.DictReader(dpath.read_text().splitlines()))
+        _path = dpath.joinpath('{}.csv'.format(geo))
+        records = list(csv.DictReader(_path.read_text().splitlines()))
     return records
 
-def collect_acs_files(years=[2011, 2016], geonames=['us', 'state', 'county']):
+def collect_acs_files(years=[2011, 2016], geonames=GEO_NAMES):
     """
         {'2016': {'01': {}}, '2011': {'01': {}}}
 
@@ -99,9 +104,10 @@ def wrangle(data=None, a_year='2011', b_year='2016'):
 
 
 def wrangle_record(record, a_year='2011', b_year='2016'):
-    rec = {}
+    rec = copy(record)
     a_year = str(a_year)
     b_year = str(b_year)
+
     for yr in [a_year, b_year]:
         rec[yr] = copy(record[yr])
 
@@ -124,7 +130,7 @@ def flatten(data, xyear='2011', yyear='2016'):
     for id, d in data.items():
         r = {}
         for n in NAME_FIELDS:
-            r[n] = d[xyear][n]  # name fields
+            r[n] = d[n]  # name fields
         for p in prefixes:
             e = d[p]
             for k in e.keys():
@@ -132,7 +138,8 @@ def flatten(data, xyear='2011', yyear='2016'):
                 try:
                     r[fkey] = e[k]
                 except KeyError:
-                    print(p, k, fkey)
+                    pass
+                    # print(p, k, fkey)
         results.append(r)
     return results
 
@@ -143,17 +150,20 @@ def flatten(data, xyear='2011', yyear='2016'):
 
 
 if __name__ == '__main__':
-
+    print("Wrangling data...")
     data = wrangle()
     #write JSON
     jpath = DESTDIR.joinpath('records.json')
+    print("Saving JSON to", jpath)
     with open(jpath, 'w') as f:
         f.write(json.dumps(data, indent=2))
 
     # write CSV
+    destpath = DESTDIR.joinpath('records.csv')
+
+    print("Flattening data to save at", destpath)
     flatdata = flatten(data)
     headers = flatdata[0].keys()
-    destpath = DESTDIR.joinpath('records.csv')
     with open(destpath, 'w') as f:
         o = csv.DictWriter(f, fieldnames=headers)
         o.writeheader()
