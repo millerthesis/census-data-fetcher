@@ -1,0 +1,22 @@
+name,slug,lambda_x
+% White,white_pct,x['white'] / x['total_population'] * 100
+% Nonwhite,nonwhite_pct,(x['total_population'] - x['white']) / x['total_population'] * 100
+% owner-occupied homes,owner_pct,x['owner_occupied'] / x['total_occupied_homes'] * 100
+% renter-occupied homes,renter_pct,x['renter_occupied'] / x['total_occupied_homes'] * 100
+% homes worth over $1m (2000 decennial),million_dollar_pct_2000,(x['homes_between_1m_15m] + x['homes_between_15m_19m'] + ['homes_over_2m']) / x['total_home_value'] * 100
+% with bachelor's,bachelors_pct,x['have_bachelors'] / x['total_educational_attainment'] * 100
+% below poverty level,poverty_pct,x['below_poverty'] / x['poverty_population'] * 100
+% household income 200k+,income_200k_pct,x['income_over_200k'] / x['household_income_population'] * 100
+% born in state,in_state_pct,x['born_in_state'] / x['total_birthplace'] * 100
+% born out of state,other_state_pct,x['born_other_state'] / x['total_birthplace'] * 100
+% foreign born,foreign_pct,x['foreign_born'] / x['total_birthplace'] * 100
+% English-only speakers,english_only_pct,x['english_only'] / x['adult_population'] * 100
+% renters moved in after 2015,moved_after_2015_pct,x['moved_after_2015'] / x['population_renter_occupied_housing_units'] * 100
+% with bachelor's (2000 decennial),bachelors_pct_2000,(x['male_bachelors'] + x['male_masters'] + x['male_professional'] + x['male_doctorate'] + x['female_bachelors'] + x['female_masters'] + x['female_professional'] + x['female_doctorate']) / x['total_educational_attainment'] * 100
+% homes worth over $1m (ACS),million_dollar_pct_acs,(x['homes_between_1m_15m'] + x['homes_between_15m_19m'] + x['homes_over_2m']) / x['total_home_value'] * 100
+Total population,total_population,x['total_population']
+Median age,median_age,x['median_age']
+Total housing units,total_units,x['housing_units']
+Median home value,home_median,x['median_home_value']
+Income per capita,income_per_capita,x['income_per_capita']
+Median household income,median_income,x['median_household_income']

@@ -5,6 +5,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', 'scripts'))
 # api.census.gov/data/2010/sf1?get=NAME,P0010001&for=state:*&key=[user key]
 
 from api.generic import api_url as generic_api_url
+from meta.geo import get_state_fips
 import re
 
 
@@ -36,6 +37,14 @@ def batch_urls(year, sumfile, variables, geo, state_fips=None, api_key=None):
                         api_key=api_key)
         ]
     return urls
+
+
+# def batch(year, sumfile, api_key=None):
+#     variables = get_acs_variable_names(year=year)
+#     urls = []
+#     for g in ['tract', 'county', 'state']:
+#         urls.extend(batch_urls(year, variables, 'tract', api_key=api_key))
+#     return urls
 
 
 

@@ -3,7 +3,7 @@ import csv
 SRC_PATH = Path('metadata', 'canonical_variables.csv')
 
 
-def get_variables(census_type=None, facet=None):
+def get_variables(census_type=None, year=None):
     """
         census_type is string, e.g. "ACS"
 
@@ -16,15 +16,21 @@ def get_variables(census_type=None, facet=None):
     if census_type:
         records = [t for t in records if census_type in t['census_type']]
 
+    if year:
+        yrstr = str(year)
+        records = [t for t in records if yrstr in t['census_year']]
+
+
     result_records = []
     for row in records:
         if row['for_app'] == 'TRUE':
             if not facet:
                 d = {}
                 d['name'] = row['name']
+                d['slug'] = row['slug']
                 d['variable'] = row['variable']
                 d['census_type'] = row['census_type']
-                d['census_year'] = row['census_year']
+                d['census_year'] = year
                 d['census_subtype'] = row['census_subtype']
             else:
                 d = row[facet]
@@ -32,12 +38,26 @@ def get_variables(census_type=None, facet=None):
     return result_records
 
 
-def get_acs_variable_names():
-    return get_variables(census_type='ACS', facet='variable')
+def get_acs_variables(year):
+    return get_variables(census_type='ACS', year='year')
+
+def get_acs_variable_names(year):
+    return [v['variable'] for v in get_acs_variables(year)]
 
 
-def get_dec_variable_names(sumfile):
-    return get_variables(census_type='DEC', facet='variable')
+# def get_dec_variable_names(year=year, sumfile):
+#     return [v['variable'] for v in get_dec_variables(census_type='DEC', year=year)]
+
+# def get_decs_variables()
+
+
+def get_acs_variable_keys():
+    """
+    returns {
+        'B00_001': {slug, census_type, census_subtype, etc}
+    }
+    """
+    return {r['variable']: r for r in get_acs_variables() }
 
 
 if __name__ == '__main__':
