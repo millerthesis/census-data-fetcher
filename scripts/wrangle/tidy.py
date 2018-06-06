@@ -153,10 +153,14 @@ if __name__ == '__main__':
     print("Wrangling data...")
     data = wrangle()
     #write JSON
-    jpath = DESTDIR.joinpath('records.json')
-    print("Saving JSON to", jpath)
-    with open(jpath, 'w') as f:
-        f.write(json.dumps(data))
+    datavals = data.values()
+    for geo in GEO_NAMES:
+        jpath = DESTDIR.joinpath(geo + '.json')
+        gdata = [d for d in datavals if d['geo'] == geo]
+        print(geo, 'data has', len(gdata), 'objects')
+        print("Saving JSON to", jpath)
+        with open(jpath, 'w') as f:
+            f.write(json.dumps(gdata))
 
     # write CSV
     destpath = DESTDIR.joinpath('records.csv')
