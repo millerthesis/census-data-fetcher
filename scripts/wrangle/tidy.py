@@ -159,11 +159,12 @@ if __name__ == '__main__':
         if geo == 'tract':
             for fip in get_state_fips():
                 jpath = DESTDIR.joinpath('tract',  fip + '.json')
-                jdata = [g for g in gdata if 'US' + fip in g['id']]
-                print(geo, fip, 'data has', len(jdata), 'objects')
+                tractdata = [g for g in gdata if 'US' + fip in g['id']]
+                print(geo, fip, 'data has', len(tractdata), 'objects')
                 print("Saving JSON to", jpath)
+                jpath.parent.mkdir(exist_ok=True, parents=True)
                 with open(jpath, 'w') as f:
-                    f.write(json.dumps(gdata))
+                    f.write(json.dumps(tractdata))
         else:
             jpath = DESTDIR.joinpath(geo + '.json')
             print(geo, 'data has', len(gdata), 'objects')
