@@ -155,16 +155,25 @@ if __name__ == '__main__':
     #write JSON
     datavals = data.values()
     for geo in GEO_NAMES:
-        jpath = DESTDIR.joinpath(geo + '.json')
         gdata = [d for d in datavals if d['geo'] == geo]
-        print(geo, 'data has', len(gdata), 'objects')
-        print("Saving JSON to", jpath)
-        with open(jpath, 'w') as f:
-            f.write(json.dumps(gdata))
+        if geo == 'tract':
+            for fip in get_state_fips():
+                jpath = DESTDIR.joinpath('tract',  fip + '.json')
+                jdata = [g for g in gdata if 'US' + fip in g['id']]
+                print(geo, fip, 'data has', len(jdata), 'objects')
+                print("Saving JSON to", jpath)
+                with open(jpath, 'w') as f:
+                    f.write(json.dumps(gdata))
+        else:
+            jpath = DESTDIR.joinpath(geo + '.json')
+            print(geo, 'data has', len(gdata), 'objects')
+            print("Saving JSON to", jpath)
+            with open(jpath, 'w') as f:
+                f.write(json.dumps(gdata))
+
 
     # write CSV
     destpath = DESTDIR.joinpath('records.csv')
-
     print("Flattening data to save at", destpath)
     flatdata = flatten(data)
     headers = flatdata[0].keys()
