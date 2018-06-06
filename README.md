@@ -26,6 +26,7 @@ Quickie analysis of the records.csv file produced by tidy
 
 ```sh
 cat data/wrangle/records.csv \
+  | csvgrep -c name -m state \
   | csvcut -c name,gentrification_index,gentrification_income \
   | csvsort -r -c gentrification_index \
   | csvlook \
